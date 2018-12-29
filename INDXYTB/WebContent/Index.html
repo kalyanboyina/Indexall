@@ -13,10 +13,24 @@ h1	{
 p	{
 	font-family : verdana;
 	font-size : 20px;
-	margin-left : 200px;
 	}
-div{
-
+div.Loginbox
+{
+margin-left : 20%;
+background-color : LightGray;
+opacity : 0.6;
+padding : 5%;
+filter : alpha(opacity=60;)
+}
+div.Loginbox p
+{
+font-weight : bold;
+color : #000000;
+}
+div.Loginbox form
+{
+font-weight : bold;
+color : #000000;
 }
 </style>
 <meta charset="UTF-8">
@@ -24,8 +38,17 @@ div{
 </head>
 <body>
 <h1>Welcome to Youtube Catalogue</h1>
-<div>
+<div class="Loginbox">
 <p>This website will be used for the development of indexes for youtube videos</p>
+<form action="/index.html">
+	First Name:<br>
+	<input type="text" name="firstname" title="Please enter your First Name" value="">
+	<br>
+	Last Name:<br>
+	<input type="text" name="lastname" title="Please enter your Last Name" value="">
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
 </div>
 </body>
 </html>
