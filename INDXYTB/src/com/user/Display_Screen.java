@@ -10,13 +10,17 @@ public class Display_Screen {
 		// TODO Auto-generated method stub
 		Db_Connection temp = new Db_Connection();
 		User[] users = temp.conman();
+		System.out.println("USER DATA");
 		for(int i = 0; i < temp.userLen; i++) {
-			System.out.print(users[i].getUser_key()+" : ");
-			System.out.print(users[i].getEmail_Address()+" : "   );
-			System.out.print(users[i].getFirst_Name()+" : ");
-			System.out.print(users[i].getUser_ID()+" : ");
+			System.out.println("-----------------------");
+			System.out.println(users[i].getUser_key());
+			System.out.println(users[i].getUser_ID());
+			System.out.println(users[i].getFirst_Name());
+			System.out.println(users[i].getLast_name());
+			System.out.println(users[i].getFull_name());
+			System.out.println(users[i].getEmail_Address());
+			System.out.println("-----------------------");
 		}
 	}
 	
-
 }
